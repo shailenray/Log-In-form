@@ -1,0 +1,128 @@
+<html>
+<head>
+<style type="text/css">
+body{
+	background: linear-gradient(purple,darkcyan);
+	justify-content:center;
+	align-items: center;
+	min-height: 100vh;
+	display: flex;
+}
+.container{
+	width: 350px;
+	height: 500px;
+	background: #ccc;
+	border-radius: 8px;
+	border: none;
+	box-shadow: 0 0 12px #222,
+				0 0 20px #333;
+	position: relative;
+}
+.container form img{
+	width: 80px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	box-shadow: 0 0 5px #222,
+				0 0 16px #444;
+	top: 30px;
+	left: 130px;
+	position: absolute;
+}
+.user{
+	top: 160px;
+	left: 20px;
+	position: absolute;
+}
+.user span{
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.user input, .pass input{
+	display: block;
+	width: 310px;
+	height: 40px;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #222;
+//	border-radius: 8px;
+	padding: 20px;
+}
+
+.pass{
+	top: 240px;
+	left: 20px;
+	position: absolute;
+}
+.pass span{
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.user input:focus, .pass input:focus{
+	border:3px solid #00f;
+	border-radius: 20px;
+	background: #888;
+	color: ff0;
+	font-weight: bold;
+}
+.login{
+	top: 330px;
+	left: 50px;
+	position: absolute;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	width: 250px;
+	height: 40px;
+	background: green;
+	border-radius: 8px;
+	border: none;
+	
+}
+.chkbox{
+	top: 390px;
+	left: 100px;
+	position: absolute;
+}
+
+.frgot a{
+	color: #00f;
+	font-size: 13px;
+	text-decoration: none;
+	top: 440px;
+	left: 115px;
+	position: absolute;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+	<form>
+		<img src="sr.jpeg">
+		<div class="user">
+			<span>Username</span>
+			<input type="text" placeholder="Username">
+		</div>
+		<div class="pass">
+			<span>Password</span>
+			<input type="password" placeholder="Password">
+		</div>
+		<input type="submit" value="Log In" class="login">
+		<div class="chkbox">
+			<input type="checkbox"> Remember me
+		</div>
+		<div class="frgot">
+			<a href="#" >Forgot Password?</a>
+		</div>
+	</form>
+
+</div>
+
+</body>
+</html>
